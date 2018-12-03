@@ -17,13 +17,9 @@ var db = new mongodb.Db(
         'instagram', 
         new mongodb.Server('localhost', 27017, {}),
         {}
-    );
+);
 
 console.log('Server on port 8080');
-
-app.get('/', function(req, res){
-    res.send({msg:'Olá'});
-});
 
 // Create
 app.post('/api', function(req, res){
